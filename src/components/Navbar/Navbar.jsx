@@ -7,7 +7,7 @@ export function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Seu JS original usava 120px para mudar a cor
+      //120px para mudar a cor da navbar (deixando de ser transparente)
       setScrolled(window.scrollY > 120);
     };
     window.addEventListener("scroll", handleScroll);
