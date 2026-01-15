@@ -4,6 +4,7 @@ import { About } from './components/About/About';
 import { Benefits } from './components/Benefits/Benefits';
 import { Gallery } from './components/Gallery/Gallery';
 import { Customize } from './components/Customize/Customize';
+import { Testimonials } from './components/Testimonials/Testimonials';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Benefits />
       <Gallery />
       <Customize />
+      <Testimonials />
   
     </>
   );
