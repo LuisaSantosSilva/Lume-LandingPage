@@ -1,0 +1,75 @@
+.background {
+    height: 100vh;
+    background: url("../../assets/img/home/hero-banner.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+
+}
+
+.hero-section .content {
+    color:#fff;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero-section .content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 500;
+    max-width: 600px;
+    line-height: 1.2;
+}
+
+.hero-section .content p {
+    font-weight: 300;
+    margin-top: 15px;
+    max-width: 600px;
+}
+
+.hero-section .content .hero-btn {
+   background: #fff; 
+   color: #000;
+   outline: none;
+   border: none;
+   text-decoration: none;
+   font-size: 1rem;
+   font-weight: 600;
+   margin-top: 38px;
+   padding: 12px 30px;
+   border-radius: 6px;
+   cursor: pointer;
+   transition: 0.2s ease;
+   display: inline-block;
+}
+
+.hero-section .content .hero-btn:hover {
+    color: #fff;
+    background: #C06B3E;
+}
+
+@media screen and (max-width: 900px) {
+    .hero-section .content {
+        text-align: center;
+    }
+
+    .hero-section .content :is(h1, p) {
+        max-width: 100%;
+    }
+
+    .hero-section .content h1 {
+        font-size: 2.3rem;
+        line-height: 60px;
+    }
+
+    .hero-section .content .hero-btn {
+        padding: 9px 18px;
+    }
+}
