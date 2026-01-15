@@ -1,0 +1,83 @@
+.gallery-section {
+    padding: 80px 20px;
+    background: #fff;
+}
+
+.gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.gallery-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem; 
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.gallery-header p {
+    font-family: 'Poppins', sans-serif;
+    color: #666;
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+}
+
+.gallery-item {
+    aspect-ratio: 1.2 / 1; 
+    background: #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border: 1px solid #eee;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08); 
+}
+
+@media screen and (max-width: 900px) {
+    .gallery-section {
+        padding: 60px 20px;
+    }
+
+    .gallery-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .gallery-grid {
+        grid-template-columns: 1fr; 
+    }
+}
