@@ -1,0 +1,152 @@
+.footer-cta {
+    background-color: #C06B3E;
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.cta-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem; 
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.cta-logo .dot {
+    color: #000;
+}
+
+.cta-phrase {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.cta-btn {
+    background: #fff;
+    color: #000;
+    border: none;
+    text-decoration: none;
+    padding: 12px 35px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+}
+
+.cta-btn:hover {
+    background-color: #C06B3E;
+    color: #fff;
+    outline: 2px solid #fff;
+}
+
+.footer-middle {
+    background: #fff;
+    padding: 40px 20px;
+}
+
+.middle-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-links-group {
+    display: flex;
+    gap: 80px;
+}
+
+.contact-box h4, .social-box h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.contact-box p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.icons {
+    display: flex;
+    gap: 15px; 
+    align-items: center;
+}
+
+.icons a img {
+    width: 20px;  
+    height: 20px; 
+    object-fit: contain; 
+    transition: transform 0.3s ease;
+}
+
+.icons a:hover img {
+    transform: scale(1.1); 
+}
+
+.footer-bottom {
+    background-color: #C06B3E;
+    padding: 25px 20px;
+    color: #fff;
+}
+
+.bottom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+}
+
+.partners {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.partners img {
+    height: 35px;
+}
+
+@media screen and (max-width: 900px) {
+    .cta-logo {
+        font-size: 2.8rem;
+    }
+
+    .middle-container {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .footer-links-group {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+
+    .bottom-container {
+        flex-direction: column-reverse;
+        gap: 20px;
+        text-align: center;
+    }
+
+}
