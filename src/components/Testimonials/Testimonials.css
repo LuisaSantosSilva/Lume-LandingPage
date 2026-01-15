@@ -1,0 +1,106 @@
+.testimonials-section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.testimonial-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.testimonial-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 10px;
+
+}
+
+.testimonial-header p {
+    font-family: 'Poppins', sans-serif;
+    color: #666;
+    font-size: 1rem;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #eee; 
+}
+
+.testimonial-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.1);
+    border-color: transparent;
+}
+
+.stars {
+    color: #C06B3E;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.quote {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.product-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.product-image {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover; 
+    margin-bottom: 20px;
+    border-radius: 8px;
+    display: block;
+}
+
+.user-info strong {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.user-info span {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+@media screen and (max-width: 900px) {
+    .testimonials-container {
+        justify-content: center;
+    }
+    
+    .testimonial-card {
+        max-width: 400px;
+        flex: none;
+        width: 100%;
+    }
+
+    .testimonial-header h2 {
+        font-size: 2.2rem;
+    }
+}
