@@ -1,0 +1,273 @@
+.customize-section {
+    background-color: #C06B3E;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.customize-header {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.customize-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.customize-header p {
+    font-family: 'Poppins', sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+.form-card {
+    background: #fff;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 20px;
+    padding: 60px;
+}
+
+.form-section-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.form-section-title h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    color: #000;
+}
+
+.form-section-title .line {
+    height: 1px;
+    background: #ccc;
+    width: 100%;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.second-row {
+    grid-template-columns: 1fr 1.2fr 0.8fr;
+}
+
+.last-row {
+    grid-template-columns: 1fr 1fr 0.5fr;
+    align-items: flex-end;
+}
+
+.price-table {
+    border: 1.5px solid #000;
+    border-radius: 12px;
+    padding: 25px;
+    font-size: 0.95rem;
+}
+
+.price-table h4 {
+    color: #C06B3E;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.group-title {
+    color: #C06B3E;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.subtitle {
+    font-size: 0.8rem;
+    color: #333;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.checkbox-container, .radio-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.checkbox-container input, .radio-container input {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkmark, .radio-mark {
+    position: absolute;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.radio-mark { border-radius: 50%; }
+.checkmark { border-radius: 4px; }
+
+.checkbox-container input:checked ~ .checkmark,
+.radio-container input:checked ~ .radio-mark {
+    background-color: #C06B3E;
+    border-color: #C06B3E;
+}
+
+.selection-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.qty-input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+}
+
+.qty-field {
+    width: 45px;
+    border: none;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    outline: none;
+}
+
+.qty-field:disabled { color: #ccc; border-bottom: 1px solid #ccc; }
+
+.colors-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+textarea, .text-input {
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 12px;
+    padding: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+textarea { height: 110px; resize: none; }
+
+.file-upload-wrapper input[type="file"] {
+    display: none;
+}
+
+.file-custom-link {
+    display: inline-block;
+    color: #000;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+    margin-top: 5px;
+}
+
+.file-custom-link:hover {
+    color: #C06B3E;
+}
+
+.total-container {
+    text-align: right;
+}
+
+.total-container strong {
+    display: block;
+    font-size: 1.8rem;
+    color: #C06B3E;
+}
+
+.submit-form-btn {
+    display: block;
+    margin: 50px auto 0;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 14px 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.submit-form-btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+/* Modal de envio (Sucesso e Erro) do Personalize */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    max-width: 550px;
+    width: 90%;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px; right: 25px;
+    cursor: pointer;
+}
+
+.success-title { font-size: 2rem; margin-bottom: 20px; }
+.success-title span, .success-text span { color: #C06B3E; font-weight: 600; }
+.modal-logo { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-top: 40px; }
+.modal-logo span { color: #C06B3E; }
+
+.success-text { 
+    font-size: 1.1rem; 
+    line-height: 1.6;
+    margin-top: 10px;
+    color: #333; 
+}
+
+.error-modal .success-title,
+.error-modal .success-text,
+.error-modal .success-title span,
+.error-modal .success-text span {
+    color: #000000;
+}
+
+.error-modal .modal-logo span {
+    color: #C06B3E; 
+}
+
+@media screen and (max-width: 900px) {
+    .form-grid, .second-row, .last-row { grid-template-columns: 1fr; }
+    .form-card { padding: 30px 20px; }
+    .total-container { text-align: left; margin-top: 15px; }
+}
