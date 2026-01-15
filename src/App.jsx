@@ -5,6 +5,7 @@ import { Benefits } from './components/Benefits/Benefits';
 import { Gallery } from './components/Gallery/Gallery';
 import { Customize } from './components/Customize/Customize';
 import { Testimonials } from './components/Testimonials/Testimonials';
+import { Footer } from './components/Footer/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Gallery />
       <Customize />
       <Testimonials />
+      <Footer />
   
     </>
   );
