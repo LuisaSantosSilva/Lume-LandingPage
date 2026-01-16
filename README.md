@@ -3,6 +3,9 @@
 >  A Lume surgiu de um desafio técnico onde a ideia era transformar com React uma landing page moderna.
 
 <br>
+
+[![Acesse o site](https://img.shields.io/badge/Acesse_o_site_agora-%23C06B3E?style=for-the-badge&logo=linkedin&logoColor=white)](https://lume-landing-page-navy.vercel.app/)
+
   
 <h4>Confira alguns dos layouts de tela:</h4>
   
